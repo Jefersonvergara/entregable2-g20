@@ -29,7 +29,8 @@ setCoords({
   useEffect(() => { 
 if(coords){
   const apiKey = 'c49635b38ce620c97784bdcf2ba6088a'
-  const URL =  `https://api.openweathermap.org/data/2.5/weather?lat=${coords.lat}&lon=${coords.lon}&appid=${apiKey}`
+  const idioma ='es'
+  const URL =  `https://api.openweathermap.org/data/2.5/weather?lat=${coords.lat}&lon=${coords.lon}&appid=${apiKey}&lang=${idioma}`
   axios.get(URL)
   .then(res => {
     setWeather(res.data)
