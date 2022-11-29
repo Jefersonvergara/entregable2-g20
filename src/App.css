@@ -1,0 +1,91 @@
+.App{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
+  background-image: url('/img/background.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; /*se adapta la imagen*/
+}
+
+.card{
+  width: 100%;
+  max-width: 400px;
+  background-color: rgba(26, 164, 219, 0.4);
+  border-radius: 12px;
+  padding: 25px;
+  padding-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+}
+.card__header,
+.card__footer,
+.card__temp{
+  grid-column: span 2;
+}
+.card__title{
+  text-align: center;
+  font-size: 2.2rem;
+  
+}
+
+.card__subtitle{
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 300;
+  grid-column: span;
+}
+
+.card__temp{
+  text-align: center;
+  font-size: 1.5rem;
+  
+}
+
+.card__info{
+  padding-top: 20px;
+}
+.card__description{
+  margin-bottom: 15px;
+  font-size: 1.3rem;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+.card__list{
+  display: grid;
+  gap: 10px;
+}
+.card__item{
+  font-size: 1rem;
+  font-weight: 200px;
+}
+.card__footer{
+  padding-top:20px ;
+  display: flex;
+  justify-content: center;
+}
+
+.card__btn{
+  border: solid;
+  border-color: rgba(242, 244, 245, 0.8);
+  padding: 0.5em 1em;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  background-color: transparent ;
+  box-shadow: 1px 1px 10px ;
+  color: white;
+  transition: transform 100ms ease;
+
+}
+.card__btn:hover{
+  transform: scale(1);
+
+}
+.card__btn:active{
+  transform: scale(1.);
+  box-shadow: 1px 1px 3px;
+
+}
